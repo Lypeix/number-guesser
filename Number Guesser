@@ -1,0 +1,51 @@
+import random
+
+def guess_func(number):
+    guess_count = 0
+    
+    while guess_count < 5:
+        guess = int(input("Guess: "))
+        guess_count += 1
+    
+        if guess == number:
+            print(f"You have successfully guessed the number in {guess_count} attempts!")
+            return
+        elif guess > number: 
+            print("Too high!")
+        else:
+            print("Too low!")
+        
+    print(f"You have reached the maximum amount of attempts! The number was {number}")
+
+def user_choice(prompt, valid_choices):
+
+    while True:
+        choice = input(prompt).strip().lower()
+        if choice in valid_choices:
+            return choice
+        else:
+            print(f"Invalid choice! Choose from: {', '.join(valid_choices)}")
+
+difficulty_settings = {
+    "easy": 10,
+    "medium": 15,
+    "hard": 20
+}
+
+difficulty = user_choice("Welcome to the Ultimate Number Guesser! Pick your difficulty: Easy, Medium, Hard ", 
+                         difficulty_settings.keys())
+
+max_range = difficulty_settings[difficulty]
+
+
+print(f"I am thinking of a random number from 1 to {max_range}")
+
+while True:
+    number = random.randint(1, max_range)
+    guess_func(number)
+
+    answer = user_choice("Play again? Y/N ", ["y", "n"])
+
+    if answer == "n":
+        print("Game ended!")
+        break

@@ -6,6 +6,7 @@ Goals:
 - Reinforce skills from first project
 - Create a short working program
 - Build good habits
+- Improve on code structure and readability
 
 Features:
 - Difficulty settings

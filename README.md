@@ -7,6 +7,7 @@ Goals:
 - Create a short working program
 - Build good habits
 - Improve on code structure and readability
+- Reconstruct without AI help
 
 Features:
 - Difficulty settings

@@ -1,6 +1,13 @@
-Number guessing game with difficulty settings.
+Project #2
+
+Desc: Number guessing game with difficulty settings.
+
+Goals:
+- Reinforce skills from first project
+- Create a short working program
+- Build good habits
 
 Features:
-- Difficulty system (easy/medium/hard)
-- Input validation
-- Replay loop
+- Difficulty settings
+- Random number generation
+- Basic gameplay loop

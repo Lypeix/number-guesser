@@ -1,3 +1,3 @@
 PROJECT #2
 
-LEARNING PROJECT WITH LIGHT AI ASSISTANCE
+First finished learning project / second overalll
